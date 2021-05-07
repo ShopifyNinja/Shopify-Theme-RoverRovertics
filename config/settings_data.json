@@ -1,0 +1,709 @@
+{
+  "current": {
+    "favicon": "shopify:\/\/shop_images\/NPPrCtn.png",
+    "logo": "shopify:\/\/shop_images\/mark_and_word_black_68_206.png",
+    "google_maps_api_key": "AIzaSyCsE54akXJYn1pOo647wtFNUyfIkvB--j4",
+    "gtm": "<!-- Google Tag Manager -->\n          <script>\n             window.dataLayer = window.dataLayer || [];\n            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n          'https:\/\/www.googletagmanager.com\/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n          })(window,document,'script','dataLayer','GTM-PRQCRRZ');\n          <\/script>\n      <!-- End Google Tag Manager -->",
+    "heading_font_select": "basic_commercial_n4",
+    "body_font_select": "beefcakes_n4",
+    "header_custom_font": "BentonSans Condensed",
+    "body_custom_font": "BentonSans",
+    "header_color": "#ffffff",
+    "color_1": "#0074e4",
+    "color_2": "#ffffff",
+    "color_3": "#000000",
+    "color_4": "#f0f0f0",
+    "color_5": "#fcfcfc",
+    "color_6": "#999999",
+    "color_7": "#5b5b5b",
+    "privacy_policy": "<div id=\"privacy-popup\">\n    <h6>We use cookies to  analyze our website traffic so we can make improvements. If you would rather not be tracked please select opt out below. For more information read our <a href=\"%7B%7Bsite.url%7D%7D\/pages\/privacy-policy\">privacy-policy<\/a>\n<\/h6>\n    <button id=\"cookie-accept\" class=\"button button--primary\">Accept Cookies<\/button>\n    <button id=\"cookie-decline\" class=\"button\">Opt out<\/button>\n  <\/div>",
+    "footer_form_action": "https:\/\/roverrobotics.us12.list-manage.com\/subscribe\/post?u=3ce45472fe4a667fefa934188&amp;id=7f6025208c",
+    "footer_form_name": "b_3ce45472fe4a667fefa934188_7f6025208c",
+    "copyright": "©2020 Open Avatar Inc.",
+    "custom_header_code": "<meta name=\"google-site-verification\" content=\"rqFp-Lknw9lzKnYxMEV-v-1QluVYUAHyTD6W5ua1rgo\">\n\n<link rel=\"stylesheet\" href=\"https:\/\/use.fontawesome.com\/releases\/v5.8.2\/css\/all.css\" integrity=\"sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq\/1cq5FLXAZQ7Ay\" crossorigin=\"anonymous\">\n\n<meta name=\"google-site-verification\" content=\"2XD9mBjKXqYYcGnLA2JYgSj2OnTq6lPRYBLGLXmQp38\">\n\n<!-- Global site tag (gtag.js) - Google Ads: 805139113 -->\n\n<script async=\"\" src=\"https:\/\/www.googletagmanager.com\/gtag\/js?id=AW-805139113\"><\/script>\n\n<script>\n\n  window.dataLayer = window.dataLayer || [];\n\n  function gtag(){dataLayer.push(arguments);}\n\n  gtag('js', new Date());\n\n \n\n  gtag('config', 'AW-805139113');\n\n<\/script>\n\n\n<script src=\"https:\/\/www.google.com\/recaptcha\/api.js\"><\/script>",
+    "display_get_in_touch": true,
+    "display_quote_request": true,
+    "shipping_calculator": "Enabled",
+    "shipping_calculator_heading": "shipping",
+    "shipping_calculator_default_country": "United States",
+    "shipping_calculator_submit_button_label": "Calculate shipping",
+    "shipping_calculator_submit_button_label_disabled": "Calculating...",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/RR_gear_logo_e36d9b58-0d10-4861-a56f-5d7921b317e4.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Source Sans Pro",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#0437fd",
+    "checkout_button_color": "#0437fd",
+    "checkout_error_color": "#e32c2b",
+    "custom_font_styles": "@font-face {\n  font-family: 'BentonSans';\n  src: url('{{ \"BentonSans-Thin.eot\" | asset_url }}');\n  src: url('{{ \"BentonSans-Thin.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n       url('{{ \"BentonSans-Thin.woff2\" | asset_url }}') format('woff2'),\n       url('{{ \"BentonSans-Thin.woff\" | asset_url }}') format('woff'),\n       url('{{ \"BentonSans-Thin.ttf\" | asset_url }}') format('truetype'),\n       url('{{ \"BentonSans-Thin.svg#BentonSans-Thin\" | asset_url }}') format('svg');\n  font-weight: 100;\n  font-style: normal;\n}\n\n@font-face {\n  font-family: 'BentonSans';\n  src: url('{{ \"BentonSans-Book.eot\" | asset_url }}');\n  src: url('{{ \"BentonSans-Book.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n       url('{{ \"BentonSans-Book.woff2\" | asset_url }}') format('woff2'),\n       url('{{ \"BentonSans-Book.woff\" | asset_url }}') format('woff'),\n       url('{{ \"BentonSans-Book.ttf\" | asset_url }}') format('truetype'),\n       url('{{ \"BentonSans-Book.svg#BentonSans-Book\" | asset_url }}') format('svg');\n  font-weight: 300;\n  font-style: normal;\n}\n\n@font-face {\n  font-family: 'BentonSans';\n  src: url('{{ \"BentonSans.eot\" | asset_url }}');\n  src: url('{{ \"BentonSans.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n       url('{{ \"BentonSans.woff2\" | asset_url }}') format('woff2'),\n       url('{{ \"BentonSans.woff\" | asset_url }}') format('woff'),\n       url('{{ \"BentonSans.ttf\" | asset_url }}') format('truetype'),\n       url('{{ \"BentonSans.svg#BentonSans\" | asset_url }}') format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n@font-face {\n  font-family: 'BentonSans';\n  src: url('{{ \"BentonSans-Medium.eot\" | asset_url }}');\n  src: url('{{ \"BentonSans-Medium.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n       url('{{ \"BentonSans-Medium.woff2\" | asset_url }}') format('woff2'),\n       url('{{ \"BentonSans-Medium.woff\" | asset_url }}') format('woff'),\n       url('{{ \"BentonSans-Medium.ttf\" | asset_url }}') format('truetype'),\n       url('{{ \"BentonSans-Medium.svg#BentonSans-Medium\" | asset_url }}') format('svg');\n  font-weight: 500;\n  font-style: normal;\n}\n\n@font-face {\n    font-family: 'BentonSans';\n    src: url('{{ \"BentonSans-Bold.eot\" | asset_url }}');\n    src: url('{{ \"BentonSans-Bold.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n         url('{{ \"BentonSans-Bold.woff2\" | asset_url }}') format('woff2'),\n         url('{{ \"BentonSans-Bold.woff\" | asset_url }}') format('woff'),\n         url('{{ \"BentonSans-Bold.ttf\" | asset_url }}') format('truetype'),\n         url('{{ \"BentonSans-Bold.svg#BentonSans-Bold\" | asset_url }}') format('svg');\n    font-weight: bold;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'BentonSans Condensed';\n    src: url('{{ \"BentonSans-CondensedBook.eot\" | asset_url }}');\n    src: url('{{ \"BentonSans-CondensedBook.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n         url('{{ \"BentonSans-CondensedBook.woff2\" | asset_url }}') format('woff2'),\n         url('{{ \"BentonSans-CondensedBook.woff\" | asset_url }}') format('woff'),\n         url('{{ \"BentonSans-CondensedBook.ttf\" | asset_url }}') format('truetype'),\n         url('{{ \"BentonSans-CondensedBook.svg#BentonSans-CondensedBook\" | asset_url }}') format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'BentonSans Condensed';\n    src: url('{{ \"BentonSans-CondensedBold.eot\" | asset_url }}');\n    src: url('{{ \"BentonSans-CondensedBold.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n         url('{{ \"BentonSans-CondensedBold.woff2\" | asset_url }}') format('woff2'),\n         url('{{ \"BentonSans-CondensedBold.woff\" | asset_url }}') format('woff'),\n         url('{{ \"BentonSans-CondensedBold.ttf\" | asset_url }}') format('truetype'),\n         url('{{ \"BentonSans-CondensedBold.svg#BentonSans-CondensedBold\" | asset_url }}') format('svg');\n    font-weight: bold;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'BentonSans Condensed';\n    src: url('{{ \"BentonSans-CondensedBlack.eot\" | asset_url }}');\n    src: url('{{ \"BentonSans-CondensedBlack.eot?#iefix\" | asset_url }}') format('embedded-opentype'),\n         url('{{ \"BentonSans-CondensedBlack.woff2\" | asset_url }}') format('woff2'),\n         url('{{ \"BentonSans-CondensedBlack.woff\" | asset_url }}') format('woff'),\n         url('{{ \"BentonSans-CondensedBlack.ttf\" | asset_url }}') format('truetype'),\n         url('{{ \"BentonSans-CondensedBlack.svg#BentonSans-CondensedBlack\" | asset_url }}') format('svg');\n    font-weight: 900;\n    font-style: normal;\n}",
+    "heading_font": "basic_commercial_soft_rounded_n4",
+    "body_font": "agmena_n4",
+    "custom_fonts": "abc",
+    "color_heading": "#3d4246",
+    "color_link": "#2980b9",
+    "color_body": "#788188",
+    "color_hero": "#ffffff",
+    "color_sale": "#2980b9",
+    "color_borders": "#e8e9eb",
+    "sections": {
+      "hero-carousel": {
+        "type": "hero-carousel",
+        "blocks": {
+          "1529706229904": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Affordable robot platforms that accelerate R&D",
+              "excerpt": "We design affordable, ROS-ready robot platforms and accessories. Our products are built on over 12 years’ experience making robots for law enforcement, military and other public safety personnel that perform some of the hardest missions in the world.  We know how to make tough, waterproof, high-performance robots.",
+              "image": "shopify:\/\/shop_images\/all_three_revA.png",
+              "ctaText": "Starting at $5,250",
+              "ctaUrl": "https:\/\/roverrobotics.com\/collections\/all\/",
+              "openUrlInNewTab": false
+            }
+          },
+          "1530118420247": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Case Study - Digi Labs' Wild Goosechaser",
+              "excerpt": "Read about how Rover Robotics provided the hardware platform for a fully autonomous pest prevention robot.",
+              "image": "shopify:\/\/shop_images\/DL_Wild_Goosechaser.jpg",
+              "ctaText": "Read the Case Study",
+              "ctaUrl": "https:\/\/blog.roverrobotics.com\/digi-labs-wild-goosechaser-a-case-study\/",
+              "openUrlInNewTab": false
+            }
+          },
+          "1530895020174": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Rover at University of Minnesota",
+              "excerpt": "Read about how Open Rover is helping researchers at University of Minnesota to revolutionize agriculture.",
+              "image": "shopify:\/\/shop_images\/Cornfield.jpg",
+              "ctaText": "Read the case study",
+              "ctaUrl": "https:\/\/blog.roverrobotics.com\/university-of-minnesotas-agricultural-robots-a-case-study\/",
+              "openUrlInNewTab": false
+            }
+          },
+          "1530113859055": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Works with ROS",
+              "excerpt": "We maintain open source packages on our GitHub page. We maintain a ROS driver, autonomous docking code, and are working on a ROS2 driver. We offer fast response times to issues and pull requests.",
+              "image": "shopify:\/\/shop_images\/ROS_Logo_1.jpg",
+              "ctaText": "Go to Github",
+              "ctaUrl": "https:\/\/github.com\/RoverRobotics\/rr_openrover_basic",
+              "openUrlInNewTab": true
+            }
+          },
+          "1529706677703": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Adopted from a proven tactical design",
+              "excerpt": "Our robots are so rugged and reliable because they were originally designed for tactical use. The design has been improved for the last 10 years an now that same design can be used for any application through the use of our open-source software libraries. Check out some of the original testing we put our robot trough by clicking below, and also checkout our open-source ROS driver by going to www.github.com\/roverrobotics",
+              "image": "shopify:\/\/shop_images\/robotex-avatar-1024x768.jpg",
+              "ctaText": "Testing Video",
+              "ctaUrl": "https:\/\/youtu.be\/nB522_BrOXU",
+              "openUrlInNewTab": true
+            }
+          }
+        },
+        "block_order": [
+          "1529706229904",
+          "1530118420247",
+          "1530895020174",
+          "1530113859055",
+          "1529706677703"
+        ],
+        "settings": {
+          "height": 1
+        }
+      },
+      "featured-products": {
+        "type": "featured-products",
+        "blocks": {
+          "1529706955398": {
+            "type": "featured_product",
+            "settings": {
+              "product": "",
+              "description": "A configurable, waterproof robot chassis for rugged applications."
+            }
+          }
+        },
+        "block_order": [
+          "1529706955398"
+        ],
+        "settings": {
+          "cta_text": "Shop all Products",
+          "cta_url": "shopify:\/\/collections\/all"
+        }
+      },
+      "featured-posts": {
+        "type": "featured-posts",
+        "settings": {
+          "height": 2,
+          "blog_url": "http:\/\/blog.roverrobotics.com"
+        }
+      },
+      "featured-docs": {
+        "type": "featured-docs",
+        "settings": {
+          "cta_text": "",
+          "cta_url": ""
+        }
+      },
+      "get-in-touch": {
+        "type": "get-in-touch",
+        "settings": {
+          "title": "Get In Touch",
+          "body": "Need help selecting the right robot, sensors, and computer for your robotics project? Contact us and we will help you select the right parts for the job",
+          "ctaText": "Contact us",
+          "ctaUrl": "\/pages\/contact"
+        }
+      },
+      "about": {
+        "type": "about",
+        "blocks": {
+          "1529708046116": {
+            "type": "text",
+            "settings": {
+              "title": "Background",
+              "hero_copy": "We took the #1 Police and Public safety robot and made it compatible with ROS and open source software",
+              "hero_copy_size": "normal",
+              "copy": "Rover Robotics was founded in 2018 as a joint venture between RoboteX (a leader in making robots for police and public safety) and the founder of Proto Labs (a leader in rapid prototype manufacturing). We took RoboteX's Avatar III robot and made it fully compatible with ROS so that anyone can leverage its extremely rugged design.",
+              "copy_columns": "one"
+            }
+          },
+          "1529708068932": {
+            "type": "text",
+            "settings": {
+              "title": "Our Goal",
+              "hero_copy": "Our goal is to create reliable and affordable robotic hardware",
+              "hero_copy_size": "normal",
+              "copy": "You may have noticed that we are one of the only robotics companies in our class that lists our pricing online, and that we are significantly cheaper robots of similar quality that sell for $12k - $20k. That's no accident. We are obsessed with driving down the cost of robotic hardware because we believe that cost is the main barrier preventing robots from pushing out of the high-value, highly limited roles they are being used for today.",
+              "copy_columns": "one"
+            }
+          },
+          "1529708167080": {
+            "type": "text",
+            "settings": {
+              "title": "The Future",
+              "hero_copy": "We want robots to be as affordable and feature rich as modern day laptops and smartphones",
+              "hero_copy_size": "normal",
+              "copy": "Only then can we see the full potential of the great open source software being written currently. We believe the future of robotic software is open source and free of vendor lock in!",
+              "copy_columns": "one"
+            }
+          }
+        },
+        "block_order": [
+          "1529708046116",
+          "1529708068932",
+          "1529708167080"
+        ],
+        "settings": {
+          "title": "Our\nStory"
+        }
+      },
+      "team": {
+        "type": "team",
+        "blocks": {
+          "1529798911675": {
+            "type": "team_member",
+            "settings": {
+              "name": "Nick F.",
+              "role": "Founder",
+              "bio": "Masters of Robotics from Cornell and ROS guru."
+            }
+          },
+          "1529798830659": {
+            "type": "team_member",
+            "settings": {
+              "name": "Adam G.",
+              "role": "Founder",
+              "bio": "A serial entrepreneur and robotics hardware veteran with 39 patents."
+            }
+          },
+          "1529798853151": {
+            "type": "team_member",
+            "settings": {
+              "name": "Eric Z.",
+              "role": "Founder",
+              "bio": "Stanford Mechatronics graduate and veteran Silicon Valley roboticist."
+            }
+          },
+          "1529798929220": {
+            "type": "team_member",
+            "settings": {
+              "name": "Nick P.",
+              "role": "Software Engineer",
+              "bio": "Formerly at Cray supercomputers, Nick now applies his skills to make super robots."
+            }
+          },
+          "1529798875235": {
+            "type": "team_member",
+            "settings": {
+              "name": "Yang Y.",
+              "role": "Operations",
+              "bio": "Graduate of Cornell University, Yang is a master of making sure things work reliably."
+            }
+          }
+        },
+        "block_order": [
+          "1529798911675",
+          "1529798830659",
+          "1529798853151",
+          "1529798929220",
+          "1529798875235"
+        ],
+        "settings": {}
+      },
+      "contact": {
+        "type": "contact",
+        "settings": {
+          "form_url": "https:\/\/quote.roverrobotics.com\/contact",
+          "title": "Contact\nRover",
+          "hero_copy": "Need help using ROS to build an autonomous solution?  Contact us to discuss our consulting capabilities.",
+          "email": "info@roverrobotics.com",
+          "phone": "(833) 768-3776",
+          "hq": "Rover Robotics\n294 Grove Ln E Suite 200\nWayzata, MN 55391"
+        }
+      },
+      "recommended-products": {
+        "type": "recommended-products",
+        "settings": {
+          "show": false,
+          "title": "Recommended For You"
+        }
+      },
+      "hero-video": {
+        "type": "hero-video",
+        "blocks": {
+          "1562604672167": {
+            "type": "text",
+            "settings": {
+              "text": "Learn More",
+              "url": "https:\/\/blog.roverrobotcs.com"
+            }
+          },
+          "1562604704425": {
+            "type": "text",
+            "settings": {
+              "text": "Shop",
+              "url": "collections\/all"
+            }
+          }
+        },
+        "block_order": [
+          "1562604672167",
+          "1562604704425"
+        ],
+        "settings": {
+          "title": "Finally, The Droids you've been looking for:",
+          "subtitle": "Robot Development Platform and Accessories",
+          "video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0055\/0433\/5925\/t\/4\/assets\/roverrobotics-video.mp4?21430",
+          "background_image": "",
+          "placeholder_image": ""
+        }
+      },
+      "ros-2": {
+        "type": "ros-2",
+        "settings": {
+          "title": "Works With ROS 1 & ROS 2",
+          "hero_copy": "We maintain open source packages on our GitHub page. We maintain a ROS driver, autonomous docking code, and are working on a ROS2 driver. We offer fast response times to issues and pull requests.",
+          "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0055\/0433\/5925\/t\/4\/assets\/ros1ros2.png?21339",
+          "link": "https:\/\/github.com\/RoverRobotics\/rr_openrover_basic"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "title": "",
+          "section_height_top": 0,
+          "section_height_bottom": 0,
+          "input_name": "",
+          "form_action_url": "",
+          "cta": ""
+        }
+      },
+      "volume-pricing": {
+        "type": "volume-pricing",
+        "settings": {
+          "title": "Volume Pricing",
+          "footnote": "*Volume pricing applies only to products made by Rover Robots. Batteries and chargers are not included",
+          "table": "<table class=\"volume-pricing\">\n    <tbody>\n<tr>\n      <th>Quantity<\/th>\n      <th>Discount<\/th>\n      <th>Lead Time (weeks)<\/th>\n    <\/tr>\n    <tr>\n      <td>0-4<\/td>\n      <td>0%<\/td>\n      <td>1-2<\/td>\n    <\/tr>\n    <tr>\n      <td>5-9<\/td>\n      <td>3%<\/td>\n      <td>2-4<\/td>\n    <\/tr>\n    <tr>\n      <td>10-24<\/td>\n      <td>7%<\/td>\n      <td>4-6<\/td>\n    <\/tr>\n    <tr>\n      <td>25-49<\/td>\n      <td>12%<\/td>\n      <td>6-8<\/td>\n    <\/tr>\n    <tr>\n      <td>50-99<\/td>\n      <td>18%<\/td>\n      <td>8-10<\/td>\n    <\/tr>\n    <tr>\n      <td>100-249<\/td>\n      <td>25%<\/td>\n      <td>10-12<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+        }
+      },
+      "warranty-repair": {
+        "type": "warranty-repair",
+        "settings": {
+          "title": "Warranty \/ Repair",
+          "content": "Rovers come with a 1 year manufacturer warranty that covers any defects related to manufacturing.\n       <a href=\"https:\/\/roverrobotics.com\/pages\/warranty\">Click here for more details<\/a> <br>  <br>\n        For repairs please contact support@roverrobotics.com.\n       We will arrange to have your Rover sent to one of our three service locations.\n       Within 1-3 business days of receiving the robot we will send a quote for the repairs.\n       Upon accepting the quote we will arrange payment, make the needed repairs and ship your robot back.\n       If needed we offer loaner Rovers while the repairs are being made..",
+          "image": "\/\/cdn.shopify.com\/s\/files\/1\/0055\/0433\/5925\/files\/Rover-Robotics-Locations_large.png?v=1544646383"
+        }
+      },
+      "1563215791093": {
+        "type": "hero-video",
+        "blocks": {
+          "1563216079686": {
+            "type": "text",
+            "settings": {
+              "text": "Learn More",
+              "url": "https:\/\/blog.roverrobotics.com"
+            }
+          },
+          "1563216128405": {
+            "type": "text",
+            "settings": {
+              "text": "Shop",
+              "url": "https:\/\/roverrobotics.com\/collections\/all"
+            }
+          }
+        },
+        "block_order": [
+          "1563216079686",
+          "1563216128405"
+        ],
+        "settings": {
+          "title": "Rugged, Industrial-Grade Robots",
+          "subtitle": "Durable, High Quality, Fully Supported and Affordable | Robot Development Platform and Accessories",
+          "video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0055\/0433\/5925\/t\/4\/assets\/roverrobotics-video.mp4?21430",
+          "background_image": "",
+          "placeholder_image": "shopify:\/\/shop_images\/all_three_revA.png"
+        }
+      },
+      "1563295920652": {
+        "type": "featured-posts",
+        "settings": {
+          "height": 8,
+          "blog_url": "https:\/\/blog.roverrobotics.com"
+        }
+      },
+      "1563296165847": {
+        "type": "get-in-touch",
+        "settings": {
+          "title": "Get In Touch",
+          "body": "Need help selecting the right robot, sensors, and computer for your robotics project? Contact us and we will help you select the right parts for the job",
+          "ctaText": "Contact Us",
+          "ctaUrl": "\/pages\/contact"
+        }
+      },
+      "1563296479611": {
+        "type": "newsletter",
+        "settings": {
+          "title": "Sign up for the latest updates",
+          "section_height_top": 0,
+          "section_height_bottom": 0,
+          "input_name": "b_3ce45472fe4a667fefa934188_7f6025208c",
+          "form_action_url": "https:\/\/roverrobotics.us12.list-manage.com\/subscribe\/post?u=3a6a957e1765e5f6e2bcca181&amp;id=0eedd62c55",
+          "cta": "Sign up"
+        }
+      },
+      "1563311879875": {
+        "type": "shopify-section",
+        "blocks": {
+          "1563311923559": {
+            "type": "column",
+            "settings": {
+              "paragraph": "Rovers use a simple UART protocol which makes them compatible with almost every processer and microcontroller",
+              "image": "shopify:\/\/shop_images\/rover-hardware-support-1_ac04664d-d211-43fa-b8a5-7b3f4020fbd3.png",
+              "column_order": "html_area,paragraph,image",
+              "column_padding": 0,
+              "element_margin": 0,
+              "html_area": "<h3>Control With Anything from a <a href=\"https:\/\/www.raspberrypi.org\/\" target=\"_blank\" style=\"color:#c31c4a\">Raspberry Pi<\/a>  to a <a href=\"https:\/\/www.adlinktech.com\/Products\/ROS2_Solution\/ROS2_Controller\/ROScube-I\" target=\"_blank\" style=\"color:#d1343b\">ADLINK ROSCube<\/a>\n<\/h3>",
+              "font_size": 16,
+              "font_color": "#000000"
+            }
+          },
+          "1563377552874": {
+            "type": "column",
+            "settings": {
+              "paragraph": "",
+              "image": "",
+              "column_order": "paragraph,image,html_area",
+              "column_padding": 0,
+              "element_margin": 0,
+              "html_area": "<iframe width=\"100%\" height=\"720px\" src=\"https:\/\/sketchfab.com\/models\/3ceae9247e09461fae38acbe3afa9310\/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; vr\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\">\n            <\/iframe>",
+              "font_size": 16,
+              "font_color": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1563311923559",
+          "1563377552874"
+        ],
+        "settings": {
+          "title": "General Purpose, Industrial-grade and Programmable Robots",
+          "section_height_top": 0,
+          "section_height_bottom": 4,
+          "background_color": "#ffffff",
+          "header_font_color": "#0074e4",
+          "text_align": "center"
+        }
+      },
+      "1563377843094": {
+        "type": "shopify-section",
+        "blocks": {
+          "1563378025432": {
+            "type": "column",
+            "settings": {
+              "paragraph": "We maintain open source packages on our GitHub page.\n                      We maintain a ROS driver, autonomous docking code, and are working on a ROS2 driver.\n                      We offer fast response times to issues and pull requests.",
+              "image": "shopify:\/\/shop_images\/ros1ros2.png",
+              "column_order": "paragraph,image,html_area",
+              "column_padding": 0,
+              "element_margin": 2,
+              "html_area": "<a style=\"background-color: #fff;\" href=\"https:\/\/github.com\/RoverRobotics\/rr_openrover_basic\" target=\"_blank\" class=\"button\"><i class=\"fab fa-github\"><\/i> Github<\/a>",
+              "font_size": 25,
+              "font_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1563378025432"
+        ],
+        "settings": {
+          "title": "Works With ROS 1 & ROS 2",
+          "section_height_top": 2,
+          "section_height_bottom": 0,
+          "background_color": "#0074e4",
+          "header_font_color": "#ffffff",
+          "text_align": "center"
+        }
+      },
+      "1563567809976": {
+        "type": "hero-carousel",
+        "blocks": {
+          "1563567815696": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Affordable robot platforms that accelerate R&D",
+              "excerpt": "We design affordable, ROS-ready robot platforms and accessories. Our products are built on over 12 years’ experience making robots for law enforcement, military and other public safety personnel that perform some of the hardest missions in the world.  We know how to make tough, waterproof, high-performance robots.",
+              "image": "shopify:\/\/shop_images\/all_three_revA.png",
+              "ctaText": "Testing Video",
+              "ctaUrl": "",
+              "openUrlInNewTab": true
+            }
+          },
+          "1563569187756": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Case Study - Digi Labs' Wild Goosechaser",
+              "excerpt": "Read about how Rover Robotics provided the hardware platform for a fully autonomous pest prevention robot.",
+              "image": "shopify:\/\/shop_images\/DL_Wild_Goosechaser.jpg",
+              "ctaText": "Read the Case Study",
+              "ctaUrl": "https:\/\/blog.roverrobotics.com\/digi-labs-wild-goosechaser-a-case-study\/",
+              "openUrlInNewTab": true
+            }
+          },
+          "1563569220280": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Rover at University of Minnesota",
+              "excerpt": "Read about how Open Rover is helping researchers at University of Minnesota to revolutionize agriculture.",
+              "image": "shopify:\/\/shop_images\/Cornfield.jpg",
+              "ctaText": "Read the case study",
+              "ctaUrl": "https:\/\/blog.roverrobotics.com\/university-of-minnesotas-agricultural-robots-a-case-study\/",
+              "openUrlInNewTab": true
+            }
+          },
+          "1563569516334": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Works with ROS",
+              "excerpt": "We maintain open source packages on our GitHub page. We maintain a ROS driver, autonomous docking code, and are working on a ROS2 driver. We offer fast response times to issues and pull requests.",
+              "image": "shopify:\/\/shop_images\/ROS_Logo.jpg",
+              "ctaText": "Go to github",
+              "ctaUrl": "https:\/\/github.com\/\/RoverRobotics\/\/rr_openrover_basic",
+              "openUrlInNewTab": true
+            }
+          },
+          "1563569636401": {
+            "type": "slide",
+            "settings": {
+              "eyebrow": "",
+              "headline": "Adopted from a proven tactical design",
+              "excerpt": "Our robots are so rugged and reliable because they were originally designed for tactical use. The design has been improved for the last 10 years an now that same design can be used for any application through the use of our open-source software libraries. Check out some of the original testing we put our robot trough by clicking below, and also checkout our open-source ROS driver by going to www.github.com\/roverrobotics",
+              "image": "shopify:\/\/shop_images\/robotex-avatar-1024x768.jpg",
+              "ctaText": "Testing Video",
+              "ctaUrl": "https:\/\/www.youtube.com\/watch?v=nB522_BrOXU&feature=youtu.be",
+              "openUrlInNewTab": true
+            }
+          }
+        },
+        "block_order": [
+          "1563567815696",
+          "1563569187756",
+          "1563569220280",
+          "1563569516334",
+          "1563569636401"
+        ],
+        "settings": {
+          "height": 5
+        }
+      },
+      "page-shop": {
+        "type": "page-shop",
+        "blocks": {
+          "1563826015480": {
+            "type": "collection",
+            "settings": {
+              "collection": "rovers"
+            }
+          },
+          "1563826106557": {
+            "type": "collection",
+            "settings": {
+              "collection": "payload-parts"
+            }
+          },
+          "1563826139661": {
+            "type": "collection",
+            "settings": {
+              "collection": "charging-equipment"
+            }
+          },
+          "1572892445292": {
+            "type": "collection",
+            "settings": {
+              "collection": "conversion-kits"
+            }
+          }
+        },
+        "block_order": [
+          "1563826015480",
+          "1563826106557",
+          "1563826139661",
+          "1572892445292"
+        ],
+        "settings": {
+          "title": "Shop"
+        }
+      },
+      "quote-request": {
+        "type": "quote-request",
+        "settings": {
+          "title": "Quote Request",
+          "thank_you_title": "Thank You!",
+          "thank_you_subtext": "You'll receive an email shortly with a quote.",
+          "phone": "",
+          "hq": ""
+        }
+      },
+      "shopify-section": {
+        "type": "shopify-section",
+        "settings": {
+          "title": "",
+          "section_height_top": 0,
+          "section_height_bottom": 0,
+          "background_color": "#ffffff",
+          "header_font_color": "#000000",
+          "text_align": "center"
+        }
+      },
+      "shopify-section-1": {
+        "type": "shopify-section-1",
+        "settings": {
+          "title": "",
+          "section_height_top": 0,
+          "section_height_bottom": 0,
+          "background_color": "#ffffff",
+          "header_font_color": "#000000",
+          "text_align": "center"
+        }
+      },
+      "shopify-section-2": {
+        "type": "shopify-section-2",
+        "settings": {
+          "title": "",
+          "section_height_top": 0,
+          "section_height_bottom": 0,
+          "background_color": "#ffffff",
+          "header_font_color": "#000000",
+          "text_align": "center"
+        }
+      },
+      "addon": {
+        "type": "addon",
+        "settings": {
+          "addon_collection": "addons"
+        }
+      },
+      "section-includes": {
+        "type": "section-includes",
+        "settings": {}
+      },
+      "product-drive-kits": {
+        "type": "product-drive-kits",
+        "blocks": {
+          "1592361344110": {
+            "type": "drive_kit",
+            "settings": {
+              "label": "2WD",
+              "drive_kit": "2wd-rover"
+            }
+          },
+          "1592361482428": {
+            "type": "drive_kit",
+            "settings": {
+              "label": "4WD",
+              "drive_kit": "4wd-rover"
+            }
+          },
+          "1592361494012": {
+            "type": "drive_kit",
+            "settings": {
+              "label": "Flipper",
+              "drive_kit": "flipper-rover"
+            }
+          }
+        },
+        "block_order": [
+          "1592361344110",
+          "1592361482428",
+          "1592361494012"
+        ],
+        "settings": {
+          "default_product": "2wd-rover",
+          "rover_video": ""
+        }
+      },
+      "section-product": {
+        "type": "section-product",
+        "settings": {
+          "default_product": "2wd-rover",
+          "video_preview_img": "shopify:\/\/shop_images\/mark_and_word_black_68_206_300x300_97089fea-37e3-4150-b745-276cf63ed8b4.png",
+          "rover_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0055\/0433\/5925\/t\/4\/assets\/roverrobotics-video.mp4?21430"
+        }
+      },
+      "section-product-simple": {
+        "type": "section-product-simple",
+        "settings": {
+          "video_preview_img": "shopify:\/\/shop_images\/rover-zero.jpg",
+          "rover_video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0055\/0433\/5925\/t\/4\/assets\/roverrobotics-video.mp4?21430"
+        }
+      }
+    },
+    "content_for_index": [
+      "1563215791093",
+      "1563311879875",
+      "1563377843094",
+      "1563295920652",
+      "1563296479611",
+      "1563567809976",
+      "1563296165847"
+    ]
+  }
+}

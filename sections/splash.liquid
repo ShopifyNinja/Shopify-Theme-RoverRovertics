@@ -1,0 +1,80 @@
+<section class="splash" style="background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url({{ section.settings.background_image | img_url: 'master' }}); background-repeat: no-repeat; background-size: cover;">
+    <div class="splash__content">
+        <h1>{{ page.title }}</h1>
+       {{  page.content }}
+    </div>
+    <div class="splash__signup">
+            <a href="{{ section.settings.link }}" class="button button--primary" type="submit">Pre-order now</a>
+    </div>
+</section>
+
+
+<style>
+    .splash {
+        margin-top: -200px;
+        height: 100vh;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .splash__content {
+        max-width: 50%;
+        font-size: 20px;
+    }
+
+    .splash__signup {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .splash__signup button {
+        align-self: baseline;
+    }
+
+    .splash__signup form {
+        display: flex;
+        flex-direction: column;
+    }
+    .splash__signup h2 {
+        color: #fff;
+    }
+    .radio input {
+        margin-right: 5px;
+    }
+
+    @media all and (max-width: 1024px) {
+        .splash {
+            flex-direction: column;
+            margin-top: 0;
+            height: 110vh;
+        }
+        .splash__content {
+            max-width: 90%;
+            text-align: center;
+        }
+    }
+</style>
+
+
+{% schema %}
+        {
+      "name": "splash",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background_image"
+        },
+        {
+          "type": "text",
+          "id":"link",
+          "label": "Button Link"
+        }
+      ]
+    }
+{% endschema %}

@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Branding",
+    "settings": [
+      {
+        "id": "favicon",
+        "type": "image_picker",
+        "label": "Favicon"
+      }
+    ]
+  },
+  {
+    "name": "Logo",
+    "settings": [
+      {
+        "id": "logo",
+        "type": "image_picker",
+        "label": "logo"
+      }
+    ]
+  },
+  {
+    "name": "API Keys",
+    "settings": [
+      {
+        "type": "text",
+        "id": "google_maps_api_key",
+        "label": "Google Maps"
+      }
+    ]
+  },
+  {
+    "name": "Global Site Tracking",
+    "settings": [
+      {
+        "label": "Google Tag Manager",
+        "id": "gtm",
+        "type": "html"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "font_picker",
+        "label": "Heading font",
+        "id": "heading_font_select",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "font_picker",
+        "label": "Body font",
+        "id": "body_font_select",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "select",
+        "id": "header_custom_font",
+        "label": "Header Custom Font",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "BentonSans",
+            "label": "BentonSans"
+          },
+          {
+            "value": "BentonSans Condensed",
+            "label": "BentonSans Condensed"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "select",
+        "id": "body_custom_font",
+        "label": "Body Custom Font",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "BentonSans",
+            "label": "BentonSans"
+          },
+          {
+            "value": "BentonSans Condensed",
+            "label": "BentonSans Condensed"
+          }
+        ],
+        "default": "none"
+      }
+    ]
+  },
+  {
+    "name": "Theme Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main Colors"
+      },
+      {
+        "type": "color",
+        "id": "header_color",
+        "label": "Header Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_1",
+        "label": "Primary 1",
+        "default": "#0074E4"
+      },
+      {
+        "type": "color",
+        "id": "color_2",
+        "label": "Primary 2",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_3",
+        "label": "Primary 3",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_4",
+        "label": "Color 4",
+        "default": "#F0F0F0"
+      },
+      {
+        "type": "color",
+        "id": "color_5",
+        "label": "Color 5",
+        "default": "#FCFCFC"
+      },
+      {
+        "type": "color",
+        "id": "color_6",
+        "label": "Color 6",
+        "default": "#999999"
+      },
+      {
+        "type": "color",
+        "id": "color_7",
+        "label": "Color 7",
+        "default": "#5B5B5B"
+      }
+    ]
+  },
+  {
+    "name": "Privacy Policy",
+    "settings": [
+      {
+        "label": "Privacy Policy",
+        "id": "privacy_policy",
+        "type": "html"
+      }
+    ]
+  },
+  {
+    "name": "Footer Signup",
+    "settings": [
+      {
+        "label": "Form Action",
+        "id": "footer_form_action",
+        "type": "text"
+      },
+      {
+        "label": "Form Input Name",
+        "id": "footer_form_name",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "copyright",
+    "settings": [
+      {
+        "label": "Footer Copyright text",
+        "id": "copyright",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "custom-header-code",
+    "settings": [
+      {
+        "label": "Custom Header Code",
+        "id": "custom_header_code",
+        "type": "html"
+      }
+    ]
+  },
+  {
+    "name": "get-in-touch",
+    "settings": [
+      {
+        "label": "Display Get In Touch",
+        "id": "display_get_in_touch",
+        "type": "checkbox",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "quote-request",
+    "settings": [
+      {
+        "label": "Display Quote Request In Cart",
+        "id": "display_quote_request",
+        "type": "checkbox",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Shipping Rates Calculator",
+    "settings": [
+      {
+        "type": "select",
+        "id": "shipping_calculator",
+        "label": "Show the shipping calculator?",
+        "options": [
+          {
+            "value": "Disabled",
+            "label": "No"
+          },
+          {
+            "value": "Enabled",
+            "label": "Yes"
+          }
+        ],
+        "default": "Enabled"
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_heading",
+        "label": "Heading text",
+        "default": "Get shipping estimates"
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_default_country",
+        "label": "Default country selection",
+        "default": "United States"
+      },
+      {
+        "type": "paragraph",
+        "content": "If your customer is logged-in, the country in his default shipping address will be selected. If you are not sure about the  spelling to use here, refer to the first checkout page."
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_submit_button_label",
+        "label": "Submit button label",
+        "default": "Calculate shipping"
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_submit_button_label_disabled",
+        "label": "Submit button label when calculating",
+        "default": "Calculating..."
+      },
+      {
+        "type": "paragraph",
+        "content": "Do not forget to include the snippet shipping-calculator in your cart.liquid template where you want the shipping  calculator to appear. You can get the snippet here: [shipping-calculator.liquid](https:\/\/github.com\/carolineschnapp\/shipping-calculator\/blob\/master\/shipping-calculator.liquid) ."
+      }
+    ]
+  }
+]

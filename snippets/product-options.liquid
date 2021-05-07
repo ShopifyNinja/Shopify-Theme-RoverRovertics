@@ -1,0 +1,39 @@
+
+<h2>{{ product.title }}</h2>
+
+<hr class="product-title--break" />
+  {% for option in product.options_with_values %}
+    <span class="variant--select__heading">Select {{option.name}} Type</span>
+    <div class="tab tab--variant-select">
+      {% assign count = 0 %}
+      {% for value in option.values %}
+        {% if count == 0 %}
+          <button class="tablinks tablinks--options multi-option"  data-name="{{option.name}}" data-value="{{value}}">{{value}}</button>
+          {% else %}
+            <button class="tablinks tablinks--options"  data-name="{{option.name}}"data-value="{{value}}">{{value}}</button>
+          {% endif %}
+          {% assign count = count | plus: 1 %}
+      {% endfor %}
+    </div>
+  {%endfor%}
+
+  <div class="product__title-price">
+    <h1 class="h3">{{ product.title }}</h1>
+    {% if product.selected_or_first_available_variant.price > 1000000 %}
+      Fill out form to get pricing and information (it may take a few seconds to load)
+    {% else%}
+
+      {% if product.type == 'Refurb Robot' %}
+          <p style="color: #0074E4;"><strong>{{ variant.selected_or_first_available_variant.inventory_quantity }} in stock</strong></p>
+
+      {% endif %}
+    {% endif %}
+    <div class="product__description richtext">
+
+            {% if productTabs | size > 1 %}
+              {{ productTabs[1] }}
+              {% else %}
+              {{ product.description }}
+            {% endif %}
+    </div>
+  </div>

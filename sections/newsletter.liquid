@@ -1,0 +1,70 @@
+<section class="newsletter module" style="padding-top: {{ section.settings.section_height_top }}%; padding-bottom: {{section.settings.section_height_bottom}}%">
+    <div class="newsletter__box container">
+       <form class="form form--subscribe" action="{{ section.settings.form_action_url }}" method="post" target="_blank">
+            <h2>{{ section.settings.title }}</h2>
+            <div class="form__group">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email"/>
+                <input type="hidden" name="{{ section.settings.input_name }}" tabindex="-1" value=""/>
+                <button type="submit" class="button button--primary button--cta">
+                    {{ section.settings.cta }}
+                    <span class="icon-arrow-large-right"></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Newsletter",
+    "settings": [
+       {
+         "id": "title",
+         "type": "text",
+         "label": "Title"
+        },
+        {
+            "id": "section_height_top",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0,
+            "label": "Section Height Top"
+          },
+          {
+            "id": "section_height_bottom",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0,
+            "label": "Section Height Bottom"
+          },
+         {
+             "id": "input_name",
+             "type": "text",
+             "label": "input_name"
+         },
+        {
+         "id":"form_action_url",
+          "type": "text",
+          "label": "Form Action URL"
+        },
+        {
+        "id": "cta",
+        "type": "text",
+        "label": "Call to action text"
+        }
+    ],
+
+    "presets": [
+    {
+      "name": "Newsletter Signup",
+      "category": "site-builder"
+    }
+  ]
+  }
+{% endschema %}
+

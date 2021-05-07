@@ -1,0 +1,43 @@
+<div class="containe warranty">
+  <h2 class="module__title">{{ section.settings.title }}</h2>
+    <p>
+     {{section.settings.content}}
+    </p>
+
+
+    <h5> Repair Locations </h5>
+    <img src="{{section.settings.image}}" alt="Location Image" />
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Warranty / Repair",
+    "class": "module module--warranty-repair module--bg",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Title",
+        "default": "Warranty / Repair"
+      },
+       {
+        "id": "content",
+        "type": "textarea",
+        "label": "Content"
+       },
+        {
+          "id": "image",
+          "type": "text",
+          "label": "Image"
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

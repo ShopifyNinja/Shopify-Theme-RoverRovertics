@@ -1,0 +1,284 @@
+{% include 'shogun-products', content: product %}
+{{product.metafields.shogun.above}}
+
+{{ 'product-custom.scss.css' | asset_url | 'stylesheet_tag' }}
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<div class="metafields-namespace">
+  {% comment %} {% assign key_name = 'drive_kits' %}
+  {{ product.metafields[key_name].handles }} {% endcomment %}
+</div>
+
+
+<div class="product product--single">
+  <div class="container">
+
+    {% section 'section-product' %}
+    
+    <div class="metafields">
+        {{ product.metafields.driver_kits.driver_names }}
+    </div>
+  </div> <!-- end container -->
+</div> <!-- end product--single -->
+
+{% section 'section-includes' %}
+
+
+<script>
+  
+  function calcPriceOnLoad(){
+    
+    var optionVariants = $(".section-option-variants ul.variants-lists.checkbox-options li.variants-item.checked .checkbox-variant.checkbox-variant-simple");
+    $(".add-to-cart-info ul.variants-simple").empty();
+
+    optionVariants.each(function(){
+      var group_name = $(this).data("group");
+      $(".add-to-cart-info ul.variants-simple.group-"+group_name).empty().append('<li id="'+ $(this).attr("id") +'">'+
+        '<div class="selected-product-title">'+ $(this).data('product-title') +'</div>'+
+        '<span class="selected-product-price">$'+ $(this).data('product-price') +'</span>'+
+        '</li>');
+    });
+
+    var optionVariants = $(".section-option-variants ul.variants-lists.checkbox-options li.variants-item.checked .checkbox-variant.product-variant");
+    $(".add-to-cart-info ul.variants-lists").empty();
+    optionVariants.each(function(){
+      $(".add-to-cart-info ul.variants-lists").append('<li id="'+ $(this).attr("id") +'">'+
+        '<div class="selected-product-title">'+ $(this).data('product-title') +'</div>'+
+        '<span class="selected-product-price">$'+ $(this).data('product-price') +'</span>'+
+        '</li>');
+    });
+
+    var driveKits = $(".section-drive-kits ul.kits-lists.checkbox-options li.kit-item.checked .checkbox-drive-kit");
+    $(".add-to-cart-info ul.drive-kits-lists").empty();
+    driveKits.each(function(){
+      $(".add-to-cart-info ul.drive-kits-lists").append('<li id="'+ $(this).attr("id") +'">'+
+        '<div class="selected-product-title">'+ $(this).data('product-title') +'</div>'+
+        '<span class="selected-product-price">$'+ $(this).data('product-price') +'</span>'+
+        '</li>');
+    });
+    
+    var batteries = $(".section-product-battery ul.battery-lists.checkbox-options li.battery-item.checked .checkbox-battery");
+    $(".add-to-cart-info ul.battery-lists").empty();
+    batteries.each(function(){
+      var qty = $(this).parent().find(".battery_qty input").val();
+      $(".add-to-cart-info ul.battery-lists").append('<li id="'+ $(this).attr("id") +'">'+
+        '<div class="selected-product-title">'+ $(this).data('product-title') + ' X ' + qty + '</div>'+
+        '<span class="selected-product-price">$'+ ($(this).data('product-price')*qty/100) +'</span>'+
+        '</li>');
+    });
+    
+    var chargers = $(".section-charger ul.charger-lists.checkbox-options li.charger-item.checked .checkbox-charger");
+    if(chargers.length > 0){
+      $(".add-to-cart-info ul.charger-lists").empty();
+      chargers.each(function(){
+        $(".add-to-cart-info ul.charger-lists").append('<li id="'+ $(this).attr("id") +'">'+
+          '<div class="selected-product-title">'+ $(this).data('product-title') +'</div>'+
+          '<span class="selected-product-price">$'+ $(this).data('product-price') +'</span>'+
+          '</li>');
+      });
+    }
+
+    calcTotalPrice();
+  }
+
+  function calcTotalPrice(){
+    var totalPrice = 0;
+    $(".group-selected-products ul li .selected-product-price").each(function(){
+      totalPrice += Number($(this).text().replace(/[^0-9.-]+/g,""));
+    });
+
+    // const formatter = new Intl.NumberFormat('en-US', {
+    //   style: 'currency',
+    //   currency: 'USD',
+    //   minimumFractionDigits: 0
+    // })
+
+    $(".selected-total-price .total-price").text("$"+totalPrice);
+  }
+
+  function variantToCart(){
+    
+      var optionVariant = $(".section-option-variants ul.variants-lists.checkbox-options li.variants-item.checked .checkbox-variant");
+      if(optionVariant.length == 0){
+        location.href="/cart";
+      }
+      
+      var data = {
+        "id": optionVariant.val(),
+        "quantity": 1
+      }
+
+      jQuery.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        data: data,
+        dataType: 'json',
+        success: function() {
+          location.href="/cart";
+        }
+      });
+  }
+  
+  function variantsToCart(items, index){
+          
+    if(index < 0 || items.length == 0){
+      variantToCart();
+      return;
+    };
+
+    var data = {
+      "id": items.eq(index).data("product-id"),
+      "quantity": 1
+    }
+
+    jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() {
+        variantsToCart(items, --index);
+      }
+    });
+  }
+
+  function driveKitsToCart(items, index){
+
+    if(index < 0 || items.length == 0){
+      var optionVariants = $(".option-variants-simple ul.variants-lists.checkbox-options li.variants-item.checked .checkbox-variant.checkbox-variant-simple");
+      variantsToCart(optionVariants, optionVariants.length-1);
+      return;
+    };
+
+    var data = {
+      "id": items.eq(index).data("product-id"),
+      "quantity": 1
+    }
+
+    jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() {
+        driveKitsToCart(items, --index);
+      }
+    });
+  }
+
+  function batteriesToCart(items, index){
+    var driveKits = $(".section-drive-kits ul.kits-lists.checkbox-options li.kit-item.checked .checkbox-drive-kit");
+    if(items.length == 0){
+      driveKitsToCart(driveKits, driveKits.length-1);
+      return;
+    }
+    if(index < 0){
+      driveKitsToCart(driveKits, driveKits.length-1);
+      return;
+    };
+
+    var data = {
+      "id": items.eq(index).data("product-id"),
+      "quantity": items.eq(index).parents(".battery-item").find(".battery_qty input").val()
+    }
+
+    jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() {
+        batteriesToCart(items, --index);
+      }
+    });
+  }
+
+  function chargersToCart(items, index){
+    var batteries = $(".section-product-battery ul.battery-lists.checkbox-options li.battery-item.checked .checkbox-battery");
+    if(items.length == 0){
+      batteriesToCart(batteries, batteries.length-1);
+      return;
+    }
+
+    if(index < 0){
+      if($("#check_without_battery").prop("checked") == false){    
+        batteriesToCart(batteries, batteries.length-1);
+      }
+      else{
+        var driveKits = $(".section-drive-kits ul.kits-lists.checkbox-options li.kit-item.checked .checkbox-drive-kit");
+        driveKitsToCart(driveKits, driveKits.length-1);
+      }
+      return;
+    };
+
+    var data = {
+      "id": items.eq(index).data("product-id"),
+      "quantity": 1
+    }
+
+    jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() {
+        chargersToCart(items, --index);
+      }
+    });
+  }
+  
+  $(function(){
+    $(".btn-add-to-cart").on("click", function(){
+      if($(this).hasClass("disabled")) return false;
+      $(this).addClass("disabled").find("span").text("ADDING...");
+      var chargers = $(".section-charger ul.charger-lists.checkbox-options li.charger-item.checked .checkbox-charger");
+      chargersToCart(chargers, chargers.length-1);
+    });
+    
+    calcPriceOnLoad();
+
+  });
+
+</script>
+
+
+
+
+<script type="text/javascript">
+function openvarientTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent--table");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  var product = {{ product | json }};
+  var CURRENT_VARIENT_PRICE = {price: parseFloat("{{product.selected_or_first_available_variant.price}}"), id: "{{product.selected_or_first_available_variant.id}}" }
+
+</script>
+
+{{product.metafields.shogun.below}}
+
+
+

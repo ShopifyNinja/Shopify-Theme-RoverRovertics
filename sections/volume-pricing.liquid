@@ -1,0 +1,55 @@
+<div class="container">
+  <h2 class="module__title">{{ section.settings.title }}</h2>
+  {% for block in section.blocks %}
+    <table class="volume-pricing">
+      {% if block.type =="table_column" %}
+        <th>{{block.settings.table_column}}</th>
+      {% endif %}
+
+      {% if block.type == "table_row" %}
+
+        {{block.settings.table_row}}
+        <tr>
+
+        </tr>
+      {% endif %}
+    </table>
+  {% endfor %}
+  {{section.settings.table}}
+  <small> {{section.settings.footnote}}</small>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Volume Pricing",
+    "class": "module module--get-in-touch module--bg",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Title",
+        "default": "Volume Pricing"
+      },
+
+      {
+      "id": "footnote",
+      "type":"text",
+      "label":"Footnote"
+      },
+      {
+        "id": "table",
+        "type": "textarea",
+        "label":"Table"
+      }
+	]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

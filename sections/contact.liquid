@@ -1,0 +1,98 @@
+
+
+
+
+
+
+
+
+<div class="page-width">
+  <div class="container">
+    <div class="row">
+      <div class="col-dk-8 col-dk-push-2">
+        
+        
+        {% assign lines = section.settings.title | newline_to_br | split: '<br />' %}
+        <h1 class="h1">
+          {% for line in lines %}
+          <span>{{ line }}</span>
+          {% unless forloop.last %}
+          <br />
+          {% endunless %}
+          {% endfor %}
+        </h1>
+      </div>
+    </div>
+
+
+    <div class="row row--contact">
+      <div class="col-dk-8 col-dk-push-2">
+        <div class="row">
+          {% if section.settings.email.size > 0%}
+            <div class="col-tb-6 col-lg-4">
+              <h6 class="h6--eyebrow--blue">Email</h6>
+              <p><a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a></p>
+            </div>
+          {% endif %}
+          {% if section.settings.phone.size > 0%}
+           <div class="col-tb-6 col-lg-4">
+              <h6 class="h6--eyebrow--blue">Phone</h6>
+            <p><a href="tel:{{ section.settings.phone }}">{{ section.settings.phone }}</a></p>
+          </div>
+          {% endif %}
+          {% if section.settings.hq.size > 0%}
+            <div class="col-tb-6 col-lg-4">
+              <h6 class="h6--eyebrow--blue">Corporate Headquarters</h6>
+              <p>{{ section.settings.hq | newline_to_br }}</p>
+            </div>
+          {% endif %}
+        </div>
+        
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+        <script> hbspt.forms.create({portalId: "7505594",formId: "59b2ca79-e6f8-41c4-aca7-37bb11dd7093"});</script>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Contact",
+    "class": "section section--contact",
+    "settings": [
+      {
+        "id":"form_url",
+        "type": "text",
+        "label": "Form POST url"
+      },
+      {
+        "id": "title",
+        "type": "textarea",
+        "label": "Title",
+        "default": "Contact"
+      },
+      {
+        "id": "hero_copy",
+        "type": "textarea",
+        "label": "Hero Copy"
+      },
+      {
+        "id": "email",
+        "type": "text",
+        "label": "Email"
+      },
+      {
+        "id": "phone",
+        "type": "text",
+        "label": "Phone"
+      },
+      {
+        "id": "hq",
+        "type": "textarea",
+        "label": "Headquarters"
+      }
+    ]
+  }
+{% endschema %}
